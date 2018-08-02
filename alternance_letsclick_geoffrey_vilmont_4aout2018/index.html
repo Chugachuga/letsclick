@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
+      <!--     A J A X  -->
       <div id="testcover"></div>
       <div class="containerajax"><div id="ajax"></div></div>
       <header><!--      H E A D E R     ---->
@@ -34,7 +35,11 @@
       <main><!--          M A I N          ---->
         <section id="slider"><!--      SLIDER     ---->
           <div class="slider-content">
-            <div class="Mask-Copy">
+            <div id="slider-button-container">
+              <div id="slider-previous"><i class="fas fa-angle-left previous"></i></div>
+              <div id="slider-next"><i class="fas fa-angle-right next"></i></div>
+            </div>
+            <div class="Mask-Copy">              
               <div class="We-transform-every-d">We transform every dream into digital <br>reality</div>
               <a href="#"><div class="Discover Discover-slider-button">discover</div></a>
             </div>
@@ -224,7 +229,9 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-      <script type="text/javascript" src="./js/main.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script src="js/utilities.js"></script>
+      <script src="js/slider.js"></script>
       <script src="js/overflow.js"></script>
       <script src="js/modal.js"></script>
     </body>

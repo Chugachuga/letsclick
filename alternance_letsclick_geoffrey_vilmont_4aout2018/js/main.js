@@ -14,6 +14,7 @@ $("#london").click(function() {
     $("#addresslondon")[0].style.display = "block";
     $("#addressparis")[0].style.display = "none";
   });
+
 $("#paris").click(function() {
     $("#london")[0].style.border = "none";
     $("#london")[0].style.color = "#b1b1b1";
