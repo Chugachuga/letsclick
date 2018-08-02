@@ -1,0 +1,901 @@
+/******************** G E N E R A L ********************/
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 79px 150px 75px;
+}
+
+/*------ F A D E   I N   E F F E C T ------*/
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*------ F O N T S -------*/
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src:url('../fonts/Montserrat-Medium.ttf.woff') format('woff'),
+        url('../fonts/Montserrat-Medium.ttf.svg#Montserrat-Medium') format('svg'),
+        url('../fonts/Montserrat-Medium.ttf.eot'),
+        url('../fonts/Montserrat-Medium.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src:url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+        url('../fonts/Montserrat-Regular.eot'),
+        url('../fonts/Montserrat-Medium.ttf') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************** H E A D E R ********************/
+
+header {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
+.Logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+header nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav a div {
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+header nav a div:hover{
+  color: #d43d40;
+}
+
+.reseaux-sociaux{
+  display: flex;
+  margin-left: auto;
+  margin-right: 30.5px;
+  height: 18px;
+}
+
+.twitterheader{
+  margin-right: 18px;
+}
+
+.facebookheader{
+  margin-right: 12.5px;
+}
+
+.reseaux-sociaux a {
+  color: #353535;
+}
+
+.reseaux-sociaux a:hover{
+  color: #d43d40;
+}
+
+/******************** M A I N ********************/
+
+.slider-content{
+  width: 100%;
+  height: 598px;
+  background: url(../img/img_png_jpg/slider1.png) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.Mask-Copy {
+  padding-top: 153px;
+  padding-left: 150px;
+  z-index: 2;
+  width: 100%;
+  height: 598px;
+  background-color: rgba(161, 26, 16, 0.15);
+}
+
+.We-transform-every-d {
+  z-index: 3;
+  width: 750px;
+  height: 214px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Discover-slider-button {
+  width: 177px;
+  height: 51px;
+  border-radius: 30px;
+  background-color: #d43d40;
+  padding: 12px 40px;
+}
+
+.Discover {
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.Discover:hover{
+  background-color: #ffffff;
+  color: #d43d40;
+}
+/*--------- A B O U T---------*/
+
+.In-the-tumultuous-bu {
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #404040;
+}
+
+.About-main-content{
+  font-size: 0;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.half {
+  height: 720px;
+  font-size: 22px;
+  width: 50%;
+  color: white;
+  background-color: #EA4235;
+  padding: 60px;
+}
+
+.abouth1 {
+  text-transform: uppercase;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 29px;
+
+
+}
+.img2{
+  height: 720px;
+  width: 50%;
+  background-image: url(../img/img_png_jpg/img.png);
+  background-size: 100% 100%;
+  background-position: 40% 60%;
+  background-repeat: no-repeat;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+.element p{
+  font-size: 22px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.element{
+  width: 600px;
+  height: 383px;
+}
+
+.outer-container {
+  width: 600px;
+  height: 383px;
+  background-color: #EA4235;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-container {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .inner-container, .element {
+        transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+    }
+
+    .inner-container {
+        right: 0;
+    }
+}
+
+.watch-video-button {
+  text-transform: uppercase;
+  margin-top: 52px;
+  padding: 12px 38px;
+  width: 221px;
+  height: 43px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d43d40;
+}
+
+.watchvideo {
+  font-size: 16px;
+}
+
+.watch-video-button:hover{
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #d43d40;
+}
+
+.playicon {
+  width: 13px;
+  display: inline-block;
+  size: 16px;
+  margin-right: 9px;
+}
+
+/*----- S E R V I C E S -----*/
+
+#Services{
+  padding: 70px 150px;
+}
+
+.servicesh1 h1{
+  font-family: 'Montserrat-Medium';
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #404040;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 98px;
+  margin-top: 0;
+}
+
+.services-container {
+  display: flex;
+}
+
+.servicebox{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  padding: 12px;
+}
+
+.servicebox h2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #404040;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+/*------ O U R   W O R K S ------*/
+
+/*--- MODAL DISPLAY ----*/
+.modals {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.modal{
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 360px;
+  z-index: 2;
+  color: white;
+}
+
+.modal-gradient{
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to top, rgba(238, 238, 238, 0), #1f1f1f);
+}
+
+.modalh1 {
+  margin: 0;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.modal-gradient p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 7px;
+}
+
+.modalbutton {
+  display: none;
+  position: absolute;
+  top: 170px;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  width: 177px;
+  height: 51px;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 12px 40px;
+  text-align: center;
+}
+
+.modal:hover .modalbutton{
+  display: block;
+}
+
+.modal:hover .modal-gradient{
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #1f1f1f);
+}
+
+
+#modal1 {
+  z-index: 1;
+  background-image: url(../img/modal/modal1.png);
+  background-position: center;
+}
+
+#modal2 {
+  z-index: 1;
+  background-image: url(../img/modal/modal2.png);
+}
+#modal3 {
+  z-index: 1;
+  background-image: url(../img/modal/modal3.png);
+}
+#modal4 {
+  z-index: 1;
+  background-image: url(../img/modal/modal4.png);
+}
+#modal5 {
+  z-index: 1;
+  background-image: url(../img/modal/modal5.png);
+}
+#modal5 {
+  z-index: 1;
+  background-image: url(../img/modal/modal5.png);
+}
+#modal6 {
+  z-index: 1;
+  background-image: url(../img/modal/modal6.png);
+}
+#modal7 {
+  z-index: 1;
+  background-image: url(../img/modal/modal7.png);
+}
+#modal8 {
+  z-index: 1;
+  background-image: url(../img/modal/modal8.png);
+}
+
+.worksh2{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ea4235;
+}
+
+/*----------- A J A X   M O D A L ------------*/
+
+/*--- COVER EFFECT ON CLICK ---*/
+#testcover {
+  display: none;
+  z-index: 300;
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+}
+
+/*--- CONTAINER FOR AJAX ---*/
+.containerajax {
+  display: none;
+  padding: 0 40px;
+  text-align: center;
+  z-index: 400;
+  position:absolute;
+  padding:0;
+  margin: 0;
+  top: 1724px;
+  width: 100%;
+  height: 1069px;
+}
+
+#ajax {
+  padding: 60px;
+  display: none;
+  margin: 0 auto;
+  width: 94%;
+  height: 1069px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*--- TEXT FOR AJAX ---*/
+.modalcoverh1 {
+  width: 265px;
+  height: 39px;
+  text-align: left;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.modalcoverh2{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 51px;
+}
+
+.business-often
+{
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  display: inline-block;
+  width: 32%;
+  text-align: left;
+}
+
+.business-often h2{
+  font-size: 28px;
+  color: #323232;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.business-often p{
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*--- IMAGE FOR AJAX ---*/
+.modalimgcover {
+  text-align: left;
+  display: inline-block;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 65%;
+  height: 740px;
+}
+
+#modal1imgcover {
+  background-image: url(../img/modal/modal1@3x.png);
+}
+#modal2imgcover {
+  background-image: url(../img/modal/modal2@3x.png);
+}
+#modal3imgcover {
+  background-image: url(../img/modal/modal3@3x.png);
+}
+#modal4imgcover {
+  background-image: url(../img/modal/modal4@3x.png);
+}
+#modal5imgcover {
+  background-image: url(../img/modal/modal5@3x.png);
+}
+#modal6imgcover {
+  background-image: url(../img/modal/modal6@3x.png);
+}
+#modal7imgcover {
+  background-image: url(../img/modal/modal7@3x.png);
+}
+#modal8imgcover {
+  background-image: url(../img/modal/modal8@3x.png);
+}
+
+/*----- BUTTON LOREM & CUNCAT FROM MODAL HTML -----*/
+.Lorembutton, .Cuncatbutton{
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 35px 12px 40px;
+  border-radius: 30px;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.Lorembutton {
+  margin-right: 20px;
+  border: solid 1px #d43d40;
+  color: #d43d40
+}
+
+.Cuncatbutton {
+  background-color: #d43d40;
+  color: #ffffff;
+}
+
+/*--------------------------- C O N T A C T --------------------*/
+
+#Contact{
+  padding: 60px;
+  background-color: #323232;
+}
+
+.hello{
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 60px;
+}
+/*----- ADDRESS TOGGLE ------*/
+.bloc {
+  vertical-align: top;
+  width: 50%;
+  display: inline-block;
+  color: #b1b1b1;
+  text-transform: uppercase;
+  padding: 14px 30px;
+}
+
+.city {
+  display: inline-block;
+  color: #b1b1b1;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-right: 30px;
+}
+
+#result{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+#paris{
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 14px;
+  padding-right: 30px;
+  margin-bottom: 16px;
+}
+
+#london{
+  padding-bottom: 14px;
+  padding-right: 30px;
+  margin-bottom: 16px;
+}
+
+#addressparis{
+  display: block;
+}
+
+#addresslondon{
+  display: none;
+}
+
+#addressparis p, #addresslondon p{
+  text-transform: none;
+  margin-bottom: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+/*---- FOLLOW + RESEAUX SOCIAUX -----*/
+#follow{
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.reseaux-sociaux2{
+  padding: 20px 0;
+}
+
+.reseaux-sociaux2 a{
+  color: white;
+}
+
+/*----- FORMULAIRE DE CONTACT -----*/
+form {
+  text-transform: capitalize;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.form-div {
+  padding: 16px 0;
+  background-color: #323232;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+}
+
+.input-form {
+  margin-left: 20px;
+  width: 50%;
+  background-color: #323232;
+  border: none;
+  color: white;
+}
+
+.textarea-form{
+  background-color: #323232;
+  width: 100%;
+  height: 60px;
+  resize: none;
+  border: none;
+  color: white;
+}
+
+.send-button{
+  cursor: pointer;
+  padding: 12px 40px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: solid 1px #ffffff;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.testcenter{
+  text-align: center;
+}
+
+/*--------_____________ F O O T E R ______________-----------*/
+
+
+.footer-outercontainer{
+  background-color: #ea4235;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-innercontainer a{
+  margin-right: 15px;
+}
+.copyright, .footer-innercontainer{
+  display: inline-block;
+}
+
+.copyright, .footer-innercontainer a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.footer-innercontainer a:hover{
+  border-bottom: 1px solid white;
+}
