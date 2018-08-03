@@ -24,6 +24,11 @@ a {
   padding: 79px 150px 75px;
 }
 
+.clear {
+  clear: both;
+  float: none;
+}
+
 /*------ F A D E   I N   E F F E C T ------*/
 
 @keyframes fadein {
@@ -146,6 +151,8 @@ header nav a div:hover{
 /******************** M A I N ********************/
 
 .slider-content{
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 598px;
   z-index: 1;
@@ -593,7 +600,7 @@ header nav a div:hover{
   margin: 0;
   top: 1724px;
   width: 100%;
-  height: 1069px;
+  height: 1080px;
 }
 
 #ajax {
@@ -601,7 +608,7 @@ header nav a div:hover{
   display: none;
   margin: 0 auto;
   width: 94%;
-  height: auto;
+  height: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1016,7 +1023,7 @@ form {
   .half {
     text-align: center;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     height: auto;
   }
 
@@ -1076,6 +1083,38 @@ form {
   .send-button{
     width: 50%;
   }
+  /* --------- A JA X-------*/
+
+  .containerajax{
+    height: auto;
+  }
+  #ajax{
+    height: auto;
+    padding:10px;
+    display: block;
+  }
+  .modalimgcover{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 300px;
+  }
+
+  .modalcoverh1, .modalcoverh2{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .business-often{
+    width: 100%;
+  }
+
+  .business-often h2{
+    margin-top: 20px;
+  }
 
   /*----- RESPONSIVE FOOTER -----*/
 
@@ -1084,6 +1123,13 @@ form {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 1152px){
+  #ajax{
+    height: auto;
+  }
+}
+
 
 @media screen and (max-width: 483px){
 
@@ -1116,5 +1162,32 @@ form {
 
   .modal{
     width: 100%;
+  }
+
+  #ajax{
+    padding:10px;
+    display: block;
+  }
+  .modalimgcover{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 300px;
+  }
+
+  .modalcoverh1, .modalcoverh2{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .business-often{
+    width: 100%;
+  }
+
+  .business-often h2{
+    margin-top: 20px;
   }
 }
