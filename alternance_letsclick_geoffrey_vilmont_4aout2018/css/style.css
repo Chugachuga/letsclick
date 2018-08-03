@@ -441,6 +441,9 @@ header nav a div:hover{
   height: 360px;
   z-index: 2;
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .modal-gradient{
@@ -598,7 +601,7 @@ header nav a div:hover{
   display: none;
   margin: 0 auto;
   width: 94%;
-  height: 1069px;
+  height: auto;
   background-color: #ffffff;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -928,4 +931,190 @@ form {
 
 .footer-innercontainer a:hover{
   border-bottom: 1px solid white;
+}
+
+/*-----------------R E S P O N S I V E    D E S I G N ---------------*/
+
+@media screen and (max-width: 870px)/* VALEUR UN PEU PRISE PAR DEFAUT */
+{
+  html {
+    font-size: 50%;
+  }
+  /*----- RESPONSIVE HEADER ----*/
+  header {
+    background: #EA4235;
+    color: white;
+  }
+  header nav {
+    color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Logo{
+    border: none;
+    margin: 0;
+  }
+  header nav a{
+    margin: 0;
+    width: 100%;
+    background-color: white;
+  }
+  header nav a div{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 1px solid rgba(234, 56, 53, 0.5);
+  }
+
+  .reseaux-sociaux{
+    margin:0;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: white;
+  }
+
+  .fa-twitter, .fa-facebook-f, .fa-linkedin-in{
+    font-size: 30px;
+  }
+
+  /*----- RESPONSIVE SLIDER ----*/
+
+  .We-transform-every-d{
+    width: 70%;
+    font-size: 35px;
+  }
+
+  .fa-angle-left, .fa-angle-right{
+    font-size: 80px;
+  }
+
+  /*----- RESPONSIVE ABOUT ----*/
+
+  .About-main-content{
+    display: block;
+  }
+
+  .In-the-tumultuous-bu{
+    height: auto;
+  }
+
+  .img2 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .half {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    height: auto;
+  }
+
+  .watch-video-button{
+    font-size: 10px;
+    padding: 13px 10px;
+    width: 80%;
+    text-align: center;
+    margin: 60px auto 0;
+  }
+
+  /*----- RESPONSIVE SERVICES ----*/
+
+  #Services {
+    padding: 70px 50px;
+  }
+
+  .services-container{
+    display: inline-block;
+  }
+  .svgservice img{
+    width: 80%;
+    height: 100px;
+  }
+
+  .servicebox {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 10px;
+  }
+  .servicebox h2{
+    font-size: 16px;
+  }
+
+  /*----- RESPONSIVE MODAL/OUR WORKS ----*/
+
+  .modal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+  }
+
+  /*----- RESPONSIVE CONTACT ----*/
+
+  #Contact{
+    padding: 60px 20px;
+  }
+
+  #Contact:first-child{
+    text-align: center;
+  }
+  .bloc{
+    display: block;
+    width: 100%;
+  }
+
+  .send-button{
+    width: 50%;
+  }
+
+  /*----- RESPONSIVE FOOTER -----*/
+
+  .footer-outercontainer, .footer-innercontainer{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 483px){
+
+  /*--- SLIDER ---*/
+
+  .Mask-Copy{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .We-transform-every-d{
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Discover-slider-button{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .container{
+    padding: 50px;
+  }
+
+  .modal{
+    width: 100%;
+  }
 }
